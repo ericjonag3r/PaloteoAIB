@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Compartir imagen" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Compartir por documento " />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ajustes" />
+        <item
+            android:id="@+id/nav_infomacion"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="infomacion" />
+    </group>
+
+    <item android:title="Ajustes rapidos">
+        <menu>
+            <item
+                android:icon="@drawable/agente"
+                android:title="cuenta" />
+            <item
+                android:icon="@drawable/camposadicionales"
+                android:title="Campos adicionales" />
+            <item
+                android:icon="@drawable/actualizar"
+                android:title="cargar Nodos-Cmts" />
+            <item
+                android:id="@+id/nav_borrarBase"
+                android:icon="@drawable/borrar"
+                android:title="Borrar datos" />
+        </menu>
+    </item>
+
+</menu>

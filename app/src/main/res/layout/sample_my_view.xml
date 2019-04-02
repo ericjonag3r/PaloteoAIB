@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1300dp"
+    android:layout_height="700dp"
+    android:background="@color/colorAccent">
+
+    <com.emprosoft7head.manejoDatos.lienzo
+        android:id="@+id/tablaPaloteo"
+        android:layout_width="2000dp"
+        android:layout_height="1500dp"
+        android:background="@color/colorAccent"
+        android:paddingStart="20dp"
+        android:paddingBottom="40dp"
+        android:visibility="visible"
+        app:exampleColor="@color/colorAccent"
+        app:exampleDimension="@android:dimen/app_icon_size"
+        app:exampleString="hello" />
+
+</FrameLayout>

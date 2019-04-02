@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Formulario"
+    tools:showIn="@layout/app_bar_formulario">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorActivites"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButtonDeshacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/cancelar" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/guardar" />
+
+        <Button
+            android:id="@+id/buttonContadorTotal"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+             />
+
+        <Button
+            android:id="@+id/buttonContadorCorte"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="crear" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEmprosoft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/tabla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TableLayout>
+            </HorizontalScrollView>
+
+
+            <EditText
+                android:id="@+id/editTextNumeroCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="numero de cuenta"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextNodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="nodo"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="ciudad"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCMTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="cmts"
+                android:inputType="textPersonName" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/editTextMultiDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:focusableInTouchMode="true"
+                android:hint="descripcion (max 80 caracteres)" />
+
+            <EditText
+                android:id="@+id/editTextOtros1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="otros1"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextOtros2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="otros2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextOtros3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="otros3"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextOtros4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+
+                android:hint="otros4"
+                android:inputType="textPersonName" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <include
+                layout="@layout/sample_my_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
